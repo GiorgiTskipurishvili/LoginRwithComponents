@@ -1,0 +1,8 @@
+<div class="employee-cards">
+    <app-card
+      *ngFor="let employee of employees"
+      [data]="employee"
+      (delete)="deleteEmployee(employee.id)">
+    </app-card>
+  </div>
+  
